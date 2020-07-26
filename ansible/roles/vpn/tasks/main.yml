@@ -1,0 +1,11 @@
+---
+- name: install wireguard
+  apt: 
+    name: wireguard
+    state: present
+    force_apt_get: true
+
+- name: move vpn configs
+  copy:
+    src: ./files/
+    dest: /etc/systemd/network

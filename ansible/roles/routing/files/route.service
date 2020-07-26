@@ -1,0 +1,11 @@
+[Unit]
+Description=Run /root/route.sh
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/root/route.sh
+
+[Install]
+WantedBy=multi-user.target

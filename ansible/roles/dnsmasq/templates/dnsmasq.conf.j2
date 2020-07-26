@@ -1,0 +1,13 @@
+{% for item in range(switch_no) %}
+interface=switch.{{ item + 2 }}
+dhcp-range=interface:switch.{{ item + 2 }},192.168.1{{ item + 2 }}.10,192.168.1{{ item + 2 }}.200,12h
+{% endfor %}
+
+bind-interfaces
+dhcp-leasefile=/var/lib/misc/dnsmasq.leases
+dhcp-authoritative
+no-resolv
+# server=8.8.8.8
+# server=1.1.1.1
+# lets use the vpn providers dns server
+server=193.138.218.74

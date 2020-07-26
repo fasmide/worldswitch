@@ -1,0 +1,17 @@
+---
+- name: configure main switch interface
+  template:
+    src: main.network.j2
+    dest: /etc/systemd/network/switch.network
+
+- name: install vlan interfaces
+  template:
+    src: vlan.netdev.j2
+    dest: "/etc/systemd/network/switch.{{ item + 2}}.netdev"
+  loop: "{{ range(switch_no)|list }}"
+
+- name: configure vlan interfaces
+  template:
+    src: vlan.network.j2
+    dest: "/etc/systemd/network/switch.{{ item + 2}}.network"
+  loop: "{{ range(switch_no)|list }}"

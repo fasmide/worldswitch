@@ -1,0 +1,12 @@
+#!/bin/bash -e
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+{% for vpn in vpn_interfaces %}
+iptables -t nat -A POSTROUTING -o {{ vpn }} -j MASQUERADE
+iptables -A FORWARD -i {{ vpn }} -o switch.{{ loop.index + 1 }} -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -A FORWARD -i switch.{{ loop.index + 1 }} -o {{ vpn }} -j ACCEPT
+
+ip -4 route add 0.0.0.0/0 dev {{ vpn }} table 10{{ loop.index + 1 }}
+ip rule add iif switch.{{ loop.index + 1 }} lookup 10{{ loop.index + 1 }}
+{% endfor %}

@@ -1,0 +1,17 @@
+---
+
+- name: generate route.sh
+  template:
+    src: route.sh.j2
+    dest: /root/route.sh
+    mode: 0740
+
+- name: add route.service
+  copy:
+    src: route.service
+    dest: /etc/systemd/system/route.service
+
+- name: enable route.service
+  systemd:
+    name: route.service
+    enabled: true
