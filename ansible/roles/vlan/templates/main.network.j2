@@ -4,6 +4,6 @@ Name={{ switch_interface }}
 [Network]
 Address=10.90.90.91/24
 
-{% for no in range(switch_no) %}
-VLAN=switch.{{ no + 2 }}
+{% for no in range(2, switch_no+2)|list %}
+VLAN=switch.{{ no }}
 {% endfor %}
