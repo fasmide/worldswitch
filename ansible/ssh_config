@@ -1,3 +1,8 @@
-Host pihosting
+Host *
     UserKnownHostsFile /known_hosts
+
+Host pihosting
     Host 192.168.1.60
+
+Host worldpi
+    host 192.168.1.247

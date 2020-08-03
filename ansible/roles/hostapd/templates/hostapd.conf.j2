@@ -1,0 +1,12 @@
+interface={{ wifi_interface }}
+# Tell hostapd what your new MAC address is
+bssid={{ wifi_mac }}
+driver=nl80211
+ssid=main
+channel=1
+
+
+{% for vpn in vpn_interfaces %}
+bss=wl-{{ vpn }}
+ssid={{ vpn }}
+{% endfor %}

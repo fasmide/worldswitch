@@ -1,0 +1,13 @@
+{% for item in vpn_interfaces %}
+interface=wl-{{ item }}
+dhcp-range=interface:wl-{{ item }},192.168.1{{ loop.index }}.10,192.168.1{{ loop.index }}.200,12h
+{% endfor %}
+
+bind-interfaces
+dhcp-leasefile=/var/lib/misc/dnsmasq.leases
+dhcp-authoritative
+no-resolv
+# server=8.8.8.8
+# server=1.1.1.1
+# lets use the vpn providers dns server
+server=193.138.218.74

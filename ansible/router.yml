@@ -5,3 +5,10 @@
     - { name: dnsmasq, tags: dnsmasq }
     - { name: vpn, tags: vpn }
     - { name: routing, tags: routing }
+    
+- hosts: wireless
+  roles:
+    - { name: vpn, tags: vpn }
+    - { name: hostapd, tags: hostapd }
+    - { name: dnsmasq-wifi, tags: dnsmasq-wifi }
+    - { name: routing, tags: routing }

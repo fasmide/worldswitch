@@ -1,0 +1,30 @@
+---
+- name: change mac address of {{ wifi_interface }}
+  template:
+    src: wifi.network.j2
+    dest: /etc/systemd/network/{{ wifi_interface }}.network
+    
+- name: ensure hostapd is present
+  apt:
+    name: hostapd
+    state: present
+    force_apt_get: true
+
+- name: add hostapd config
+  template:
+    src: hostapd.conf.j2
+    dest: /etc/hostapd/hostapd.conf
+
+- name: enable hostapd
+  service:
+    name: hostapd
+    masked: false
+    enabled: true
+
+- name: give wl-{{ item }} an ip address
+  template:
+    src: interface.network.j2
+    dest: /etc/systemd/network/wl-{{item}}.network
+  loop_control:
+    index_var: index  
+  loop: "{{ vpn_interfaces }}"

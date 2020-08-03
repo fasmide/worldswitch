@@ -14,3 +14,17 @@ all:
             - mlvd-es2
             - mlvd-hk3
             - mlvd-us65
+    wireless:
+      hosts:
+        worldpi:
+          ansible_user: pi
+          ansible_become: yes
+          ansible_ssh_common_args: -F ssh_config
+          ansible_python_interpreter: /usr/bin/python3
+          wifi_interface: wlx000f60069e76
+          wifi_mac: 02:0f:60:06:9e:70
+          vpn_interfaces:
+            - mlvd-au4
+            - mlvd-es2
+            - mlvd-hk3
+            - mlvd-us65
