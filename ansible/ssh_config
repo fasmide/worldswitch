@@ -1,3 +1,3 @@
-Host pihosting
-    UserKnownHostsFile /known_hosts
-    Host 192.168.1.60
+Host worldrouter
+    UserKnownHostsFile known_hosts
+    Hostname 192.168.1.206
