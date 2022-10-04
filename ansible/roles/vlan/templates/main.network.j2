@@ -2,8 +2,8 @@
 Name={{ switch_interface }}
 
 [Network]
-Address=10.90.90.91/24
+DHCP=yes
 
-{% for no in range(switch_no) %}
-VLAN=switch.{{ no + 2 }}
+{% for no in switch_vlans %}
+VLAN=port-{{ no }}
 {% endfor %}
