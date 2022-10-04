@@ -2,11 +2,15 @@
 
 echo 1 > /proc/sys/net/ipv4/ip_forward
 
-{% for vpn in vpn_interfaces %}
-iptables -t nat -A POSTROUTING -o {{ vpn }} -j MASQUERADE
-iptables -A FORWARD -i {{ vpn }} -o switch.{{ loop.index + 1 }} -m state --state RELATED,ESTABLISHED -j ACCEPT
-iptables -A FORWARD -i switch.{{ loop.index + 1 }} -o {{ vpn }} -j ACCEPT
+{% for route in routing|dict2items %}
+# Config for 
+# LAN:   port-{{ route.key + 1 }}
+# WAN:   {{ route.value.hostname }}
+# City:  {{ route.value.city }}
+iptables -t nat -A POSTROUTING -o {{ route.value.hostname }} -j MASQUERADE
+iptables -A FORWARD -i {{ route.value.hostname }} -o port-{{ route.key + 1 }} -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -A FORWARD -i port-{{ route.key + 1 }} -o {{ route.value.hostname }} -j ACCEPT
+ip -4 route add 0.0.0.0/0 dev {{ route.value.hostname }} table 10{{ route.key + 1 }}
+ip rule add iif port-{{ route.key + 1 }} lookup 10{{ route.key + 1 }}
 
-ip -4 route add 0.0.0.0/0 dev {{ vpn }} table 10{{ loop.index + 1 }}
-ip rule add iif switch.{{ loop.index + 1 }} lookup 10{{ loop.index + 1 }}
 {% endfor %}
