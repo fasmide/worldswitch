@@ -1,0 +1,5 @@
+[Unit]
+{% for no in switch_vlans %}
+Requires=sys-devices-virtual-net-port\x2d{{no}}.device
+After=sys-devices-virtual-net-port\x2d{{no}}.device
+{% endfor %}

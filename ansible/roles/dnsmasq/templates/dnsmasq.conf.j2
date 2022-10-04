@@ -1,6 +1,6 @@
-{% for item in range(switch_no) %}
-interface=switch.{{ item + 2 }}
-dhcp-range=interface:switch.{{ item + 2 }},192.168.1{{ item + 2 }}.10,192.168.1{{ item + 2 }}.200,12h
+{% for item in switch_vlans %}
+interface=port-{{ item  }}
+dhcp-range=interface:port-{{ item  }},10.11.{{ item }}.10,10.11.{{ item  }}.200,12h
 {% endfor %}
 
 bind-interfaces
