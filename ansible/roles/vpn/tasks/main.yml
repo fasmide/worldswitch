@@ -1,11 +1,14 @@
 ---
-- name: install wireguard
-  apt: 
-    name: wireguard
-    state: present
-    force_apt_get: true
 
-- name: move vpn configs
-  copy:
-    src: ./files/
-    dest: /etc/systemd/network
+- name: generate interfaces
+  template:
+    src: netdev.j2
+    dest: "/etc/systemd/network/vpn-{{ item.value.hostname }}.netdev"
+    mode: 0644
+  loop: "{{ routing | dict2items }}"
+
+- name: generate ip config
+  template:
+    src: network.j2
+    dest: "/etc/systemd/network/vpn-{{ item.value.hostname }}.network"
+  loop: "{{ routing | dict2items }}"

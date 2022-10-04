@@ -1,0 +1,13 @@
+[NetDev]
+Name={{ item.value.hostname }}
+Kind=wireguard
+
+[WireGuard]
+PrivateKey={{ privatekey }}
+
+[WireGuardPeer]
+PublicKey={{ item.value.pubkey }}
+AllowedIPs=0.0.0.0/0
+AllowedIPs=::0/0
+Endpoint={{ item.value.ipv4 }}:51820
+# PersistentKeepalive=60

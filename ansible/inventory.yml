@@ -2,15 +2,9 @@ all:
   children:
     routers:
       hosts:
-        pihosting:
-          ansible_user: fas
-          ansible_become: yes
-          ansible_ssh_common_args: -F ssh_config
+        worldrouter:
+          ansible_user: root 
+          ansible_ssh_common_args: -F ssh_config 
           ansible_python_interpreter: /usr/bin/python3
-          switch_interface: enxb49cdff196c7 # The physical interface connected to vlan capable switch
-          switch_no: 4 # how many ports should be configured
-          vpn_interfaces:
-            - mlvd-au4
-            - mlvd-es2
-            - mlvd-hk3
-            - mlvd-us65
+          switch_interface: eth0 # The physical interface connected to vlan capable switch
+          switch_vlans: "{{ range(1, 49)|list }}"
