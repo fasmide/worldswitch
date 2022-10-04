@@ -1,0 +1,5 @@
+---
+- name: copy torrc
+  copy:
+    src: torrc
+    dest: /etc/tor/torrc
