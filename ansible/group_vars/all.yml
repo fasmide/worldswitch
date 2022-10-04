@@ -1,0 +1,416 @@
+order:
+    - Melbourne
+    - Sydney
+    - Vienna
+    - Brussels
+    - Sao Paulo
+    - Sofia
+    - Toronto
+    - Vancouver
+    - Prague
+    - Copenhagen
+    - Tallinn
+    - Helsinki
+    - Marseille
+    - Paris
+    - Dusseldorf
+    - Frankfurt
+    - Hong Kong
+    - Budapest
+    - Dublin
+    - Tel Aviv
+    - Milan
+    - Osaka
+    - Tokyo
+    - Riga
+    - Luxembourg
+    - Chisinau
+    - Amsterdam
+    - Auckland
+    - Skopje
+    - Oslo
+    - Warsaw
+    - Lisbon
+    - Bucharest
+    - Belgrade
+    - Singapore
+    - Bratislava
+    - Madrid
+    - Gothenburg
+    - Stockholm
+    - Zurich
+    - London
+    - Manchester
+    - Ashburn, VA
+    - Chicago, IL
+    - Houston, TX
+    - Los Angeles, CA
+routing:
+    0:
+        hostname: au3-wireguard
+        country: Australia
+        city: Melbourne
+        active: true
+        ipv4: 103.231.88.2
+        type: wireguard
+        pubkey: 5kKbUwLVpmctk6BS8mxl/zeY3DCtR1jesOlocYr6gzk=
+    1:
+        hostname: au13-wireguard
+        country: Australia
+        city: Sydney
+        active: true
+        ipv4: 89.44.10.162
+        type: wireguard
+        pubkey: VNyHFgr0yhjg2+58Tx3sU2wUPcS9+k7GuIPr1htWkjw=
+    2:
+        hostname: at5-wireguard
+        country: Austria
+        city: Vienna
+        active: true
+        ipv4: 86.107.21.34
+        type: wireguard
+        pubkey: jJVG/lv7RikDG0FMsV3WJgfot5XecPm9aHDrYvU+NAM=
+    3:
+        hostname: be-bru-wg-101
+        country: Belgium
+        city: Brussels
+        active: true
+        ipv4: 91.90.123.2
+        type: wireguard
+        pubkey: GE2WP6hmwVggSvGVWLgq2L10T3WM2VspnUptK5F4B0U=
+    4:
+        hostname: br1-wireguard
+        country: Brazil
+        city: Sao Paulo
+        active: true
+        ipv4: 45.162.228.186
+        type: wireguard
+        pubkey: 2eYsuY/H7kpeam31OG+eQ7s43BeuyzoVgqwdeGXMd3A=
+    5:
+        hostname: bg6-wireguard
+        country: Bulgaria
+        city: Sofia
+        active: true
+        ipv4: 217.138.221.242
+        type: wireguard
+        pubkey: lCGzNzh+hxEOyXQFvNo8FZwZcCD3dLgZvAo6XhnmUmk=
+    6:
+        hostname: ca23-wireguard
+        country: Canada
+        city: Toronto
+        active: true
+        ipv4: 198.54.132.98
+        type: wireguard
+        pubkey: iGwKJTbm/aL4kJXwcJkO0JYPEEGGDcYBrRTG7CHIQx0=
+    7:
+        hostname: ca7-wireguard
+        country: Canada
+        city: Vancouver
+        active: true
+        ipv4: 71.19.249.31
+        type: wireguard
+        pubkey: uPz+Jh+cXpTmNOmCvBJOFWzzygtCcnkAZ0jyFQF9pFQ=
+    8:
+        hostname: cz5-wireguard
+        country: Czech Republic
+        city: Prague
+        active: true
+        ipv4: 217.138.199.98
+        type: wireguard
+        pubkey: uZTF1+bM/EiXMBbvvZ7qGMtC7PMmHez1XHOomYSQbCs=
+    9:
+        hostname: dk2-wireguard
+        country: Denmark
+        city: Copenhagen
+        active: true
+        ipv4: 45.129.56.67
+        type: wireguard
+        pubkey: egl+0TkpFU39F5O6r6+hIBMPQLOa8/t5CymOZV6CC3Y=
+    10:
+        hostname: ee-tll-wg-003
+        country: Estonia
+        city: Tallinn
+        active: true
+        ipv4: 194.127.167.107
+        type: wireguard
+        pubkey: +8dUgpD7YA4wMPnRQkO7EI7AeYd30QPMKh/hOaaGIXY=
+    11:
+        hostname: fi1-wireguard
+        country: Finland
+        city: Helsinki
+        active: true
+        ipv4: 185.204.1.203
+        type: wireguard
+        pubkey: rGL76wTvmRKI2f8VHdGEZnTQbwRG4+RTO1sokGouVGU=
+    12:
+        hostname: fr15-wireguard
+        country: France
+        city: Marseille
+        active: true
+        ipv4: 138.199.15.162
+        type: wireguard
+        pubkey: fOrw0hU1D3Wc2A7AsLVdozlDlxwYOHZo6ZJ9OiNmGxU=
+    13:
+        hostname: fr13-wireguard
+        country: France
+        city: Paris
+        active: true
+        ipv4: 194.110.113.67
+        type: wireguard
+        pubkey: YdJ9oVr5sCvE1kQhMm2d67XFjaQn15AofDgLRJPtlwo=
+    14:
+        hostname: de-dus-wg-002
+        country: Germany
+        city: Dusseldorf
+        active: true
+        ipv4: 185.254.75.4
+        type: wireguard
+        pubkey: TPAIPTgu9jIitgX1Bz5xMCZJ9pRRZTdtZEOIxArO0Hc=
+    15:
+        hostname: de-fra-wg-101
+        country: Germany
+        city: Frankfurt
+        active: true
+        ipv4: 146.70.117.162
+        type: wireguard
+        pubkey: Voioje9Gfb7aTiK2/H6VyHFK1AFap1glIX0Z1EX2mRQ=
+    16:
+        hostname: hk4-wireguard
+        country: Hong Kong
+        city: Hong Kong
+        active: true
+        ipv4: 89.45.6.114
+        type: wireguard
+        pubkey: NpthstUXmLmwkfbKvl8XvpCtKm4yfRk55D07s223UX0=
+    17:
+        hostname: hu3-wireguard
+        country: Hungary
+        city: Budapest
+        active: true
+        ipv4: 86.106.74.66
+        type: wireguard
+        pubkey: gHcjEh2XuoCPiExm8ScXdz6pzduZPp6zRyam6NE6VRQ=
+    18:
+        hostname: ie2-wireguard
+        country: Ireland
+        city: Dublin
+        active: true
+        ipv4: 217.138.222.106
+        type: wireguard
+        pubkey: DOunbHw/O5gnTNo1Ov/6rknpvJck9BlQ1zTMHE4JA38=
+    19:
+        hostname: il-tlv-wg-103
+        country: Israel
+        city: Tel Aviv
+        active: true
+        ipv4: 169.150.227.222
+        type: wireguard
+        pubkey: 11FJ/NY3jaAw1PSYG9w7bxsMxAzlI+1p8/juh1LJPT0=
+    20:
+        hostname: it9-wireguard
+        country: Italy
+        city: Milan
+        active: true
+        ipv4: 178.249.211.66
+        type: wireguard
+        pubkey: NgwNcjxnm7XEBo/6YTrMzChhUG9KEwZ9RRReShYBF2s=
+    21:
+        hostname: jp-osa-wg-004
+        country: Japan
+        city: Osaka
+        active: true
+        ipv4: 45.8.223.240
+        type: wireguard
+        pubkey: JpDAtRuR39GLFKoQNiKvpzuJ65jOOLD7h85ekZ3reVc=
+    22:
+        hostname: jp13-wireguard
+        country: Japan
+        city: Tokyo
+        active: true
+        ipv4: 91.193.7.82
+        type: wireguard
+        pubkey: MirGjkQpzD6c6yxgbcvECZlECFvgO0hx5p+QhpOJYRQ=
+    23:
+        hostname: lv1-wireguard
+        country: Latvia
+        city: Riga
+        active: true
+        ipv4: 31.170.22.15
+        type: wireguard
+        pubkey: /4WK/eoCp0d2g3Vnd2D+0JVxcUVagZoZm0xg3bZpdgY=
+    24:
+        hostname: lu1-wireguard
+        country: Luxembourg
+        city: Luxembourg
+        active: true
+        ipv4: 92.223.89.181
+        type: wireguard
+        pubkey: nqb90SP3pY5kGjO0UetVv7PdOkZUEOh91Gmcf3LFRXc=
+    25:
+        hostname: md1-wireguard
+        country: Moldova
+        city: Chisinau
+        active: true
+        ipv4: 178.175.131.98
+        type: wireguard
+        pubkey: BQobp2UXHJguYGz06WWJGJV6QytNIZlgMwr6Joufhx8=
+    26:
+        hostname: nl-ams-wg-102
+        country: Netherlands
+        city: Amsterdam
+        active: true
+        ipv4: 92.60.40.209
+        type: wireguard
+        pubkey: uUYbYGKoA6UBh1hfkAz5tAWFv4SmteYC9kWh7/K6Ah0=
+    27:
+        hostname: nz1-wireguard
+        country: New Zealand
+        city: Auckland
+        active: true
+        ipv4: 103.108.94.34
+        type: wireguard
+        pubkey: fz9sSuR61ZqbFlI004lFBksGbw3U4KADy0Kvxhv5JyY=
+    28:
+        hostname: mk1-wireguard
+        country: North Macedonia
+        city: Skopje
+        active: true
+        ipv4: 185.225.28.146
+        type: wireguard
+        pubkey: bBpLzsGFejooiGku1yzNIvRb3U8Upr032I3nxCCkzn4=
+    29:
+        hostname: no3-wireguard
+        country: Norway
+        city: Oslo
+        active: true
+        ipv4: 176.125.235.73
+        type: wireguard
+        pubkey: zOBWmQ3BEOZKsYKbj4dC2hQjxCbr3eKa6wGWyEDYbC4=
+    30:
+        hostname: pl1-wireguard
+        country: Poland
+        city: Warsaw
+        active: true
+        ipv4: 185.244.214.58
+        type: wireguard
+        pubkey: p9FqkVuPmFXOta1CFn81m0HRgD+uic5UfLU0fQb3t00=
+    31:
+        hostname: pt2-wireguard
+        country: Portugal
+        city: Lisbon
+        active: true
+        ipv4: 94.46.24.49
+        type: wireguard
+        pubkey: 9fS+IEof6FztE6sdxuyq94PzB90obnggin4TuHEpLhY=
+    32:
+        hostname: ro8-wireguard
+        country: Romania
+        city: Bucharest
+        active: true
+        ipv4: 185.120.144.98
+        type: wireguard
+        pubkey: fdEVvu79A9F/VcI0sDK+7RNWBt1Yg2OYXo7O+fliKF8=
+    33:
+        hostname: rs3-wireguard
+        country: Serbia
+        city: Belgrade
+        active: true
+        ipv4: 152.89.160.178
+        type: wireguard
+        pubkey: 9U+3Wxd6DLZ+p9q0OImYd5FeLYjs86DHO7wsEL04M2A=
+    34:
+        hostname: sg5-wireguard
+        country: Singapore
+        city: Singapore
+        active: true
+        ipv4: 94.198.43.50
+        type: wireguard
+        pubkey: +B9zLO2t0vCxoLlrG3fhB8M1OQ/kOSr6VL81eP+AUXU=
+    35:
+        hostname: sk1-wireguard
+        country: Slovakia
+        city: Bratislava
+        active: true
+        ipv4: 138.199.34.129
+        type: wireguard
+        pubkey: fPs3PsvwF/bxeWaGjsgFh88f/m2cdytuaUTl0o9OllA=
+    36:
+        hostname: es-mad-wg-201
+        country: Spain
+        city: Madrid
+        active: true
+        ipv4: 146.70.128.194
+        type: wireguard
+        pubkey: LyO4Xs1eV8JwFr63a1FRnKboQn2Tu/oeMzHhbr7Y6GU=
+    37:
+        hostname: se10-wireguard
+        country: Sweden
+        city: Gothenburg
+        active: true
+        ipv4: 185.213.154.69
+        type: wireguard
+        pubkey: veGD6/aEY6sMfN3Ls7YWPmNgu3AheO7nQqsFT47YSws=
+    38:
+        hostname: se7-wireguard
+        country: Sweden
+        city: Stockholm
+        active: true
+        ipv4: 185.65.135.223
+        type: wireguard
+        pubkey: Io+BJ9lxGxi8jhvy95tqwudkzzy5zrvrf8KLxWRGs0w=
+    39:
+        hostname: ch17-wireguard
+        country: Switzerland
+        city: Zurich
+        active: true
+        ipv4: 91.193.4.194
+        type: wireguard
+        pubkey: 4cr4WJxUbl5EqayrN2EecNROHjiXGkZKEProFeyaPWo=
+    40:
+        hostname: gb-lon-wg-101
+        country: UK
+        city: London
+        active: true
+        ipv4: 146.70.119.66
+        type: wireguard
+        pubkey: MPZX0ZQtB5r1pmcvIcsAt1AMvenios2ICBz9rjbN/l4=
+    41:
+        hostname: gb40-wireguard
+        country: UK
+        city: Manchester
+        active: true
+        ipv4: 146.70.132.130
+        type: wireguard
+        pubkey: Jr8ukrsqtIEh18VNTH5vlEARA+H6GpJmFlcP4uoeXUY=
+    42:
+        hostname: us-qas-wg-101
+        country: USA
+        city: Ashburn, VA
+        active: true
+        ipv4: 185.156.46.130
+        type: wireguard
+        pubkey: NODBnzBgLO5Itv+HOyQer7jpVn1UdCKfv9uwAAvvMkA=
+    43:
+        hostname: us18-wireguard
+        country: USA
+        city: Chicago, IL
+        active: true
+        ipv4: 68.235.43.90
+        type: wireguard
+        pubkey: ol481cXpMyefr/BiXiJZQ5ITTkuazXCDETr4UZaZ8Ww=
+    44:
+        hostname: us255-wireguard
+        country: USA
+        city: Houston, TX
+        active: true
+        ipv4: 37.19.221.156
+        type: wireguard
+        pubkey: arh7i4ptcw/4pzHLSJgfH5B5GI7c4J8yaZ3UJbch3X8=
+    45:
+        hostname: us63-wireguard
+        country: USA
+        city: Los Angeles, CA
+        active: true
+        ipv4: 89.45.90.132
+        type: wireguard
+        pubkey: OHVBM9rbVR9JBDeZV/s+3ddSYrVZV1zEn+CuEUQD3Ew=
