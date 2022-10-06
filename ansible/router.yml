@@ -5,6 +5,7 @@
     - { name: dnsmasq, tags: dnsmasq }
     - { name: vpn, tags: vpn }
     - { name: routing, tags: routing }
+    - { name: tor, tags: tor }
   vars:
     ipv6: !vault |
       $ANSIBLE_VAULT;1.1;AES256
