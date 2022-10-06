@@ -1,0 +1,16 @@
+User tor
+Log notice syslog
+DataDirectory /var/lib/tor
+
+# HostMin:   10.192.0.1           00001010.11 000000.00000000.00000001
+# HostMax:   10.255.255.254       00001010.11 111111.11111111.11111110
+# Hosts/Net: 4194302
+VirtualAddrNetwork 10.192.0.0/10
+
+# defaults to .onion,.exit
+# AutomapHostsSuffixes .onion,.exit
+AutomapHostsOnResolve 1
+
+# should this be fine with just listening on localhost?
+TransPort 10.11.47.1:9040
+DNSPort 10.11.47.1:5353

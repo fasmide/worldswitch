@@ -14,3 +14,24 @@ ip -4 route add 0.0.0.0/0 dev {{ route.value.hostname }} table 10{{ route.key + 
 ip rule add iif port-{{ route.key + 1 }} lookup 10{{ route.key + 1 }}
 
 {% endfor %}
+
+#                     
+#   m                 
+# mm#mm   mmm    m mm 
+#   #    #" "#   #"  "
+#   #    #   #   #    
+#   "mm  "#m#"   #    
+#                     
+# On port-47
+
+# is this really needed? - masq is usually set on the "wan facing" interface
+# iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+
+# This should pass ssh traffic to the router instead of getting redirected to the tor daemon
+iptables -t nat -A PREROUTING -i port-47 -p tcp -m tcp -d 10.11.47.1 --dport 22 -j ACCEPT
+
+# redirect dns queries to the tor daemon
+iptables -t nat -A PREROUTING -i port-47 -p udp -m udp --dport 53 -j REDIRECT --to-ports 5353
+
+# iptables -t nat -A PREROUTING -i port-47 -p tcp -m tcp --tcp-flags FIN,SYN,RST,ACK SYN -j REDIRECT --to-ports 9040
+iptables -t nat -A PREROUTING -i port-47 -p tcp -m tcp -j REDIRECT --to-ports 9040
