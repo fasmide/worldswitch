@@ -131,6 +131,12 @@ func (s *SSID) loop() {
 				log.Printf("unable to run command: %s\n%s", err, string(out))
 			}
 
+			cmd = exec.Command("uci", "set", fmt.Sprintf("wireless.wifinet2.ssid=%s", world[tree]))
+			out, err = cmd.CombinedOutput()
+			if err != nil {
+				log.Printf("unable to run command: %s\n%s", err, string(out))
+			}
+
 			cmd = exec.Command("uci", "commit")
 			out, err = cmd.CombinedOutput()
 			if err != nil {
