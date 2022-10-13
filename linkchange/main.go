@@ -106,7 +106,10 @@ func (s *SSID) loop() {
 				continue
 			}
 
-			log.Printf("We have a new Addr: %+v", c)
+			log.Printf("we have a new Addr: %+v", c)
+
+			// this is not going to be pretty
+			// we could of cause use come cidr Contain instead but hey...
 			var one, two, tree, four int
 			_, err := fmt.Sscanf(c.LinkAddress.IP.String(), "%d.%d.%d.%d", &one, &two, &tree, &four)
 			if err != nil {
@@ -118,6 +121,7 @@ func (s *SSID) loop() {
 				log.Printf("nothing to do here...")
 				continue
 			}
+
 			s.CurrentIndex = tree
 			start := time.Now()
 
