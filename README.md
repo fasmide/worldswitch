@@ -12,11 +12,13 @@ We added an access point that can be plugged into a destination for mobile devic
 ## Contents
 [ansible/](ansible/) for setting up the routing device - we are using a raspberry pi, but anything should do - it depends heavily on systemd but should be otherwise distro independent.
 
-[groupvar/](groupvar/) some go code reading ansible/group_vars/all.yml and generates an updated one based on Mullvad's HTTP API.
+[groupvar/](groupvar/) some go code reading [ansible/group_vars/all.yml](ansible/group_vars/all.yml) and generates an updated one based on Mullvad's HTTP API.
 
 [linkchange/](linkchange/) a go daemon running on the access point for detecting link changes and updating SSIDs accordingly.
 
 [j4899a.config](j4899a.config) our particular switch's configuration; We Needed to configure VLANs for every port available on the switch.
+
+[worldswitch.svg](worldswitch.svg) cyber graphics!
 
 ## Build your own
 We are going to assume the reader is capable of identifying qualified old networking gear from their scrap bin:
@@ -30,7 +32,8 @@ Everything else should be included:
 * Run the [groupvar/](groupvar/) code for updating VPN endpoints
 * Run the ansible playbook against the Linux box
 * Optionally configure the access point and add the [linkchange/](linkchange/) daemon
-* Cyber!
+* cyber!
 
 ## Pics or Didn't happen
-<img><img>
+![pic1](pic1.jpeg)
+![pic2](pic2.jpeg)
