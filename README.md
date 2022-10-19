@@ -18,18 +18,19 @@ We added an access point that can be plugged into a destination for mobile devic
 
 [j4899a.config](j4899a.config) our particular switch's configuration; We Needed to configure VLANs for every port available on the switch.
 
-Build your own
+## Build your own
 We are going to assume the reader is capable of identifying qualified old networking gear from their scrap bin:
-Some VLAN-capable switch
-Some Linux box
-Optionally an OpenWRT access point
-Everything else should be included:
-Configure the switch
-Update secrets in ansible/router.yml
-Run the groupvar/ code for updating VPN endpoints
-Run the ansible playbook against the Linux box
-Optionally configure the access point and add the linkchange/ daemon
-Cyber!
+* Some VLAN-capable switch
+* Some Linux box
+* Optionally an OpenWRT access point
 
-Pics or Didn't happen
+Everything else should be included:
+* Configure the switch
+* Update secrets in [ansible/router.yml](ansible/router.yml)
+* Run the [groupvar/](groupvar/) code for updating VPN endpoints
+* Run the ansible playbook against the Linux box
+* Optionally configure the access point and add the [linkchange/](linkchange/) daemon
+* Cyber!
+
+## Pics or Didn't happen
 <img><img>
