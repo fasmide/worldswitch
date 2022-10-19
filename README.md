@@ -1,5 +1,5 @@
 # Worldswitch
-The worldswitch is a project about creating a VPN device available to the users of our local hackerspace, hal9k.dk.
+The worldswitch is a project about creating a VPN device available to the users of our local hackerspace, [hal9k.dk](https://www.hal9k.dk/).
 
 ![banner](worldswitch.png)
 
