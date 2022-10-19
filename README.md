@@ -1,6 +1,6 @@
 The worldswitch is a project about creating a VPN device available to the users of our local hackerspace, hal9k.dk.
 
-[[worldswitch.png]]
+![banner](worldswitch.png)
 
 Getting on the internet in another part of the world is intuitive and easy; There are 48 locations available, select a destination by plugging an ethernet cable into the desired port on the device.
 
