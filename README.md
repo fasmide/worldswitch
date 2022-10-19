@@ -35,5 +35,4 @@ Everything else should be included:
 * cyber!
 
 ## Pics or Didn't happen
-![pic1](pic1.jpeg =25%x)
-![pic2](pic2.jpeg =25%x)
+![pic1](pic1.jpeg) | ![pic2](pic2.jpeg)
