@@ -1,3 +1,4 @@
+# Worldswitch
 The worldswitch is a project about creating a VPN device available to the users of our local hackerspace, hal9k.dk.
 
 ![banner](worldswitch.png)
@@ -8,14 +9,14 @@ No configuration is needed—no need to worry about leaking outside the tunnels.
 
 We added an access point that can be plugged into a destination for mobile devices and other wifi-things.
 
-Contents
-ansible/ for setting up the routing device - we are using a raspberry pi, but anything should do - it depends heavily on systemd but should be otherwise distro independent.
+## Contents
+[ansible/](ansible/) for setting up the routing device - we are using a raspberry pi, but anything should do - it depends heavily on systemd but should be otherwise distro independent.
 
-groupvar/ some go code reading ansible/group_vars/all.yml and generates an updated one based on Mullvad's HTTP API.
+[groupvar/](groupvar/) some go code reading ansible/group_vars/all.yml and generates an updated one based on Mullvad's HTTP API.
 
-linkchange/ a go daemon running on the access point for detecting link changes and updating SSIDs accordingly.
+[linkchange/](linkchange/) a go daemon running on the access point for detecting link changes and updating SSIDs accordingly.
 
-j4899a.config our particular switch's configuration; We Needed to configure VLANs for every port available on the switch.
+[j4899a.config](j4899a.config) our particular switch's configuration; We Needed to configure VLANs for every port available on the switch.
 
 Build your own
 We are going to assume the reader is capable of identifying qualified old networking gear from their scrap bin:
