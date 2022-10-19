@@ -35,4 +35,6 @@ Everything else should be included:
 * cyber!
 
 ## Pics or Didn't happen
+<img src="pic1.jpeg" width="100">
+
 ![pic1](pic1.jpeg | width=100) ![pic2](pic2.jpeg | width=100)
