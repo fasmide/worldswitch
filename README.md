@@ -35,4 +35,4 @@ Everything else should be included:
 * cyber!
 
 ## Pics or Didn't happen
-<img src="pic1.jpeg" width="30%"> <img src="pic2.jpeg" width="30%"> <img src="pic2.jpeg" width="30%">
+<img src="pic1.jpeg" width="30%"> <img src="pic2.jpeg" width="30%"> <img src="pic3.jpeg" width="30%">
