@@ -7,7 +7,6 @@ bind-interfaces
 dhcp-leasefile=/var/lib/misc/dnsmasq.leases
 dhcp-authoritative
 no-resolv
-# server=8.8.8.8
-# server=1.1.1.1
-# lets use the vpn providers dns server
-server=193.138.218.74
+
+dhcp-option=6,1.2.3.4,5.6.7.8
+port=0
